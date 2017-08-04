@@ -1,0 +1,61 @@
+html,
+body {
+  min-width: 290px;
+  -ms-overflow-style: scrollbar;
+  overflow: hidden;
+  background-color: #eee;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #515151;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.margin-left-right10{
+  margin: 0 10px;
+}
+.margin-top-bottom10{
+  margin: 10px 0;
+}
+
+.flex-column{ flex:1; display: flex; flex-direction: column;}
+.flex-row{ flex:1; display: flex; flex-direction: row;}
+
+.text-center{
+  text-align: center;
+  & td,& th{
+    text-align: center;
+  }
+}
+.markdown{
+  margin-top: 20px;
+  .ant-table-body{
+    table th {
+        background: #f7f7f7;
+    }
+    table td, table th {
+        border: 1px solid #e9e9e9;
+        padding: 8px 16px;
+        text-align: left;
+    }
+    table th {
+        white-space: nowrap;
+        color: #5c6b77;
+        font-weight: 600;
+    }
+  }
+}
+.ReactCodeMirror .CodeMirror{
+  height: auto;
+}
+// 内容栏
+.right-content{
+  padding: 0  0 0 @side-bar-width;
+  height: 100vh;
+  overflow-y: auto;
+}
+// /.内容栏
+// 覆盖ant
+.ant-table-body{
+  background: #fff;
+}
+// /.覆盖ant

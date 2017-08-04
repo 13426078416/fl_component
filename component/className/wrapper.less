@@ -1,0 +1,34 @@
+// 背景色
+.wrapper-bg(@color1, @color2){
+  background-image: -moz-linear-gradient(top, @color1, @color2); /* Firefox */
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, @color1), color-stop(1, @color2)); /* Saf4+, Chrome */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@{color1}', endColorstr='@{color2}', GradientType='0'); /* IE*/
+}
+.wrapper {
+  position: relative;
+  top: 0;
+  height: 100vh;
+  .wrapper-bg(#69574d, #e4cf90);
+}
+.wrapper2{
+  .wrapper-bg(#162d4f, #718ba4);
+}
+.wrapper3{
+  .wrapper-bg(#2c3e50, #6f92b5);
+}
+.wrapper4{
+  .wrapper-bg(#38578d, #866a9a);
+}
+.wrapper5{
+  .wrapper-bg(#3e3e40, #aaaaaa);
+}
+.wrapper6{
+  .wrapper-bg(#68893a, #a9d270);
+}
+.wrapper7{
+  .wrapper-bg(#da8100, #e4b674);
+}
+.wrapper8{
+  .wrapper-bg(#5194c1, #9dc8e4);
+}
+// /. 背景色

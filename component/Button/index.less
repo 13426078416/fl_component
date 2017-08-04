@@ -1,0 +1,43 @@
+.ant-btn{
+  font-size: 12px;
+}
+.rs-btn-type(@color) {
+  color: #fff;
+  background-color: @color;
+  border-color: @color;
+  &:hover,
+  &:focus,
+  &:active{
+    color: #fff;
+    background-color:color(~`colorPalette("@{color}", 7)`);
+    border-color: color(~`colorPalette("@{color}", 7)`);
+  }
+  &.ant-btn-background-ghost{
+    color: @color;
+    border-color: @color;
+    &:hover,
+    &:focus,
+    &:active{
+      color: color(~`colorPalette("@{color}", 7)`);
+      border-color: color(~`colorPalette("@{color}", 7)`);
+    }
+  }
+}
+.ant-btn.ant-btn-info {
+  .rs-btn-type(@info-color);
+}
+.ant-btn.ant-btn-success {
+  .rs-btn-type(@success-color);
+}
+.ant-btn.ant-btn-error {
+  .rs-btn-type(@error-color);
+}
+.ant-btn.ant-btn-warning {
+  .rs-btn-type(@warning-color);
+}
+.ant-btn.ant-btn-normal {
+  .rs-btn-type(@normal-color);
+}
+.ant-btn.ant-btn-gary {
+  .rs-btn-type(@gary-color);
+}

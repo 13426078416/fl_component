@@ -1,0 +1,87 @@
+.search-bar{
+  position: relative;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 6px;
+  padding: 20px 12px;
+  margin-bottom: 20px;
+  .search-bottom{
+    text-align: right;
+    padding-right: 8px;
+    button{
+      margin-left: 10px;
+    }
+  }
+  .search-bar-col{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    .search-bar-label{
+      padding-right: 10px;
+      font-size:@font-size-base;
+      min-width: 75px;
+    }
+    .search-bar-content{
+      flex: 1;
+    }
+  }
+  &.vertical{
+    .search-bar-col{
+      float:none;
+    }
+    .search-bottom{
+      text-align: left;
+      padding-left: 75px;
+    }
+  }
+  @media screen and (min-width: 1390px) {
+      .ant-col-8{
+        width: 25%;
+      }
+      .ant-col-12{
+        width: 33.333333333%;
+      }
+  }
+  @media screen and (max-width: 1000px) {
+      .ant-col-8{
+        width: 50%;
+      }
+      .ant-col-12{
+        width: 50%;
+      }
+  }
+  @media screen and (max-width: 750px) {
+      .ant-col-8{
+        width: 100%;
+      }
+      .ant-col-12{
+        width: 100%;
+      }
+  }
+  .search-checkgroup{
+    display: flex;
+    align-items: center;
+  }
+  .search-vh{
+    position: absolute;
+    top: -8px;
+    right: -9px;
+    opacity: .8;
+    &.vertical{
+      transform:rotate(90deg);
+      -ms-transform:rotate(90deg); /* IE 9 */
+      -moz-transform:rotate(90deg);
+    }
+  }
+  .search-more-btn{
+    display: inline-block;
+    padding: 0px 0px 0 10px;
+    line-height: 12px;
+    font-size: 12px;
+    cursor: pointer;
+    color: @primary-color;
+  }
+}

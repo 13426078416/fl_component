@@ -1,0 +1,47 @@
+.icon-btn-type(@color) {
+  color: @color;
+  &:hover,
+  &:focus,
+  &:active{
+    border-color: color(~`colorPalette("@{color}", 4)`);
+    background-color: color(~`colorPalette("@{color}", 2)`);
+  }
+}
+.icon-button{
+  display: inline-block;
+  font-size: 15px;
+  position: relative;
+  width: 22px;
+  text-align: center;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px rgba(0,0,0,0) solid;
+  &:hover,&:active,&:focus{
+    border: 1px #ccc solid;
+  }
+  .icon-btn-type(@primary-color);
+  &[type="primary"]{
+    .icon-btn-type(@primary-color);
+  }
+  &[type="info"]{
+    .icon-btn-type(@info-color);
+  }
+  &[type="success"]{
+    .icon-btn-type(@success-color);
+  }
+  &[type="error"]{
+    .icon-btn-type(@error-color);
+  }
+  &[type="warning"]{
+    .icon-btn-type(@warning-color);
+  }
+  &[type="normal"]{
+    .icon-btn-type(@normal-color);
+  }
+  &[type="gary"]{
+    .icon-btn-type(@gary-color);
+  }
+  .icon{}
+}

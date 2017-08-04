@@ -1,0 +1,22 @@
+{
+  "name": "fl_component",
+  "version": "1.0.0",
+  "description": "fl 组件库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13426078416/fl_component.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/13426078416/fl_component/issues"
+  },
+  "homepage": "https://github.com/13426078416/fl_component#readme",
+  "dependencies": {
+    "react": "^15.6.1"
+  }
+}
